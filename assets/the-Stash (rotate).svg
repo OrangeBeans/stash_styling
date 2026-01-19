@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <circle id="outer-film-base" cx="100" cy="100" r="80" fill="none" />
+    <circle id="inner-film-base" cx="100" cy="100" r="45" fill="none" />
+  </defs>
+
+  <use href="#outer-film-base" stroke="black" stroke-width="40" />
+  <use href="#outer-film-base" stroke="white" stroke-width="26" stroke-dasharray="2 48.27" />
+  <circle cx="100" cy="100" r="94.5" fill="none" stroke="white" stroke-width="4" stroke-dasharray="6 8.78" />
+  <circle cx="100" cy="100" r="66" fill="none" stroke="white" stroke-width="4" stroke-dasharray="6 4.3" />
+
+
+  <g id="inner-ring-group">
+      <animateTransform 
+          attributeName="transform" 
+          type="rotate" 
+          from="0 100 100" 
+          to="360 100 100" 
+          dur="60s" 
+          repeatCount="indefinite" />
+
+      <use href="#inner-film-base" stroke="black" stroke-width="14" />
+      <use href="#inner-film-base" stroke="white" stroke-width="8" stroke-dasharray="2 45.12" />
+      <circle cx="100" cy="100" r="50.5" fill="none" stroke="white" stroke-width="3" stroke-dasharray="3 10.2" />
+      <circle cx="100" cy="100" r="39.5" fill="none" stroke="white" stroke-width="3" stroke-dasharray="3 7.29" />
+  </g>
+
+</svg>
